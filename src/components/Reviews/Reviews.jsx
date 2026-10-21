@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import { getMovieReviews } from '../../api/tmdb-api';
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { getMovieReviews } from "../../api/tmdb-api";
 
 const Reviews = () => {
   const { movieId } = useParams();

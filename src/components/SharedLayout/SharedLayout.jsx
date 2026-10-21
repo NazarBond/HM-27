@@ -1,11 +1,11 @@
-import { Suspense } from 'react';
-import { Outlet, NavLink } from 'react-router-dom';
-import styled from 'styled-components';
+import { Suspense } from "react";
+import { Outlet, NavLink } from "react-router-dom";
+import styled from "styled-components";
 
 const Header = styled.header`
   padding: 16px 32px;
   border-bottom: 1px solid #ccc;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   gap: 20px;
 `;
@@ -28,7 +28,7 @@ export const SharedLayout = () => {
         <StyledLink to="/">Home</StyledLink>
         <StyledLink to="/movies">Movies</StyledLink>
       </Header>
-      <main style={{ padding: '20px 32px' }}>
+      <main style={{ padding: "20px 32px" }}>
         <Suspense fallback={<div>Loading page...</div>}>
           <Outlet />
         </Suspense>
